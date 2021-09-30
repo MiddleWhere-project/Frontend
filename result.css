@@ -1,0 +1,106 @@
+.img {
+    position: relative;
+    background-image: url("img/map_screen.png");
+    height: 100vh;
+    background-size: cover;
+}
+
+.img .title {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    padding-top: 20px;
+    text-align: center;
+    color: black;
+    font-size: 18px;
+}
+
+/* .img .view_mode .walk {
+    width: 45px;
+    height: 45px;
+    background-color: white;
+    border-radius: 45px;
+
+} */
+
+.img .search {
+    position: absolute;
+    width: 90%;
+    height: 119px;
+    background-color: white;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+.img .location1 {
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    top: 302px;
+    left: 31px;
+    color: white;
+    padding: 8px;
+    background-color: #0E71E8;
+    text-align: center;
+}
+
+.img .location2 {
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    top: 352px;
+    left: 250px;
+    color: white;
+    padding: 8px;
+    background-color: #0E71E8;
+    text-align: center;
+}
+
+.img .search .location_name {
+    padding-top: 32px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.img .search .location_detail {
+    font-size: 15px;
+    padding-top: 8px;
+    padding-bottom: 39px;
+}
+
+.img .location1 .time {
+    font-weight: bold;
+}
+
+.img .location2 .time {
+    font-weight: bold;
+}
+
+.img .location_center_name {
+    position: absolute;
+    font-size: 15px;
+    width: 110px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 9px;
+    top: 272px;
+    left: 156px;
+}
+
+.img .location_center_area {
+    position: absolute;
+    width: 152px;
+    height: 152px;
+    left: 114px;
+    top: 314px;
+    border-radius: 100px;
+    background-color: rgba(14, 113, 232, 0.3);
+
+}
