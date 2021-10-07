@@ -102,5 +102,84 @@
     top: 314px;
     border-radius: 100px;
     background-color: rgba(14, 113, 232, 0.3);
+}
 
+
+.img .walk {
+    float: right;
+    padding: 10px;
+    width: 35px;
+    height: 35px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 35px;
+    text-align: center;
+    margin-right: 8px;
+    margin-top: 11px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 35px;
+    display: block;
+}
+
+.img .bus {
+    float: right;
+    padding: 10px;
+    width: 35px;
+    height: 35px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 35px;
+    text-align: center;
+    margin-right: 8px;
+    margin-top: 11px;
+    font-size: 12px;
+    font-weight: bold;
+
+}
+
+.img .car {
+    float: right;
+    padding: 10px;
+    width: 35px;
+    height: 35px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 35px;
+    text-align: center;
+    margin-right: 8px;
+    margin-top: 11px;
+    font-size: 12px;
+    font-weight: bold;
+
+}
+
+.img .real_center {
+    float: right;
+    padding: 10px;
+    width: 35px;
+    height: 35px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 35px;
+    text-align: center;
+    margin-right: 8px;
+    margin-top: 11px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 35px;
+    display: block;
+    color: #0E71E8;
+}
+
+.search_text {
+    float: left;
+}
+
+.search_share {
+    float: right;
+    height: 36px;
+    padding: 35px;
+    line-height: 36px;
+    display: block;
 }
