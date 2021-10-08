@@ -53,14 +53,14 @@
         height: 12px;
         /* 말풍선 밑 뾰족부분*/
 
-        background: url("vertex_black.png");
+        background: url("img/vertex_black.png");
       }
     </style>
   </head>
   <body>
     <div id="map" style="width: 380px; height: 650px"></div>
     <!--원래는 380 * 721임-->
-
+    <div id="clickLatlng"></div>
     <script
       type="text/javascript"
       src="//dapi.kakao.com/v2/maps/sdk.js?appkey=2735ef6051f0141700c5cffeb4f4cb16"
@@ -118,7 +118,8 @@
       });
 
       // 마커가 지도 위에 표시되도록 설정합니다
-      marker.setMap(map);*/
+      marker.setMap(map);
+      */
 
       // 커스텀 오버레이에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
       var content =
@@ -142,47 +143,24 @@
         yAnchor: 1,
       });
 
+      // 지도 클릭시 해당 위치의 위도, 경도 알려주는 코드
+      // 중간거리 계산에 필요할까 싶어서 .. !
+      kakao.maps.event.addListener(map, "click", function (mouseEvent) {
+        // 클릭한 위도, 경도 정보를 가져옵니다
+        var latlng = mouseEvent.latLng;
+
+        // 마커 위치를 클릭한 위치로 옮깁니다
+        // marker.setPosition(latlng);
+
+        var message = "클릭한 위치의 위도는 " + latlng.getLat() + " 이고, ";
+        message += "경도는 " + latlng.getLng() + " 입니다";
+
+        var resultDiv = document.getElementById("clickLatlng");
+        resultDiv.innerHTML = message;
+      });
+
       // 지도 위의 마커 제거하는 코드
       // marker.setMap(null);
-
-      /*인포 윈도우 관련 코드
-      var iwContent = '<div style="padding:5px;">신원중학교</div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
-        iwPosition = new kakao.maps.LatLng(33.450701, 126.570667), //인포윈도우 표시 위치입니다
-        // removeable 속성을 ture 로 설정하면 인포윈도우를 닫을 수 있는 x버튼이 표시됨
-        // 근데 우린 x버튼 필요 없으니까 false로 해두겠음.
-        iwRemoveable = false;
-
-      // 인포윈도우를 생성하고 지도에 표시합니다
-      var infowindow = new kakao.maps.InfoWindow({
-        map: map, // 인포윈도우가 표시될 지도
-        position: iwPosition,
-        content: iwContent,
-        removable: iwRemoveable,
-      });
-
-      // 여기부터 인포윈도우 커스텀. 원래코드 아님.
-      var mLabel = new daum.maps.InfoWindow({
-        position: new daum.maps.LatLng(position.latlng[0], position.latlng[1]),
-        content: '<span class="info-title">신원중학교</span>', // 인포윈도우 내부에 들어갈 컨텐츠
-      });
-      mLabel.open(map, marker); // 지도에 올리면서, 두번째 인자로 들어간 마커 위에 올라가도록 설정
-
-      var infoTitle = document.querySelectorAll(".info-title");
-      infoTitle.forEach(function (e) {
-        var w = e.offsetWidth + 10;
-        var ml = w / 2;
-        e.parentElement.style.top = "82px";
-        e.parentElement.style.left = "50%";
-        e.parentElement.style.marginLeft = -ml + "px";
-        e.parentElement.style.width = w + "px";
-        e.parentElement.previousSibling.style.display = "none";
-        e.parentElement.parentElement.style.border = "0px";
-        e.parentElement.parentElement.style.background = "unset";
-      });
-
-      // 아래 코드는 인포윈도우를 지도에서 제거합니다
-      // infowindow.close(); 
-      */
     </script>
   </body>
 </html>
