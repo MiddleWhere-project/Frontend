@@ -4,6 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <script type="text/javascript">
+      // 여기 친구들은 교통 수단에 따라 시간 달라지는 거 표현하기 위함.
+      // 각 수단별 소요시간에 맞게 바뀌도록 하면 됨.
+
+      function walk() {
+        //alert("walk 성공"); // 얜 걍 확인용
+        var str1 = "도보시간1";
+        var str2 = "도보시간2";
+        document.getElementById("time_location1").innerHTML = str1;
+        document.getElementById("time_location2").innerHTML = str2;
+      }
+
+      function bus() {
+        //alert("bus 성공"); // 얜 걍 확인용
+        var str1 = "대.교시간1";
+        var str2 = "대.교시간2";
+        document.getElementById("time_location1").innerHTML = str1;
+        document.getElementById("time_location2").innerHTML = str2;
+      }
+
+      function car() {
+        //alert("car 성공"); // 얜 걍 확인용
+        var str1 = "자.택시간1";
+        var str2 = "자.택시간2";
+        document.getElementById("time_location1").innerHTML = str1;
+        document.getElementById("time_location2").innerHTML = str2;
+      }
+
+      function real_center() {
+        //alert("r_c 성공"); // 얜 걍 확인용
+        var str1 = "찐중간시간1";
+        var str2 = "찐중간시간2";
+        document.getElementById("time_location1").innerHTML = str1;
+        document.getElementById("time_location2").innerHTML = str2;
+      }
+    </script>
+
     <link rel="stylesheet" type="text/css" href="result_map.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
@@ -28,16 +66,38 @@
         <div class="map">
           <div id="map" style="width: 100%; height: 650px">
             <div class="trasport">
-              <div class="real_center">찐중간</div>
-              <div class="car">
+              <!--마우스 올라갈 때 커서 때문에 버튼으로 만들어보려고 했으나 value값 줄바꿈이 안돼서 걍 텍스트로 함 .. -->
+              <!--<input
+                class="real_center"
+                type="button"
+                value="찐중간"
+                onclick="real_center()"
+              />
+              <input
+                class="car"
+                type="button"
+                value="자차택시"
+                onclick="car()"
+              />
+              <input
+                class="bus"
+                type="button"
+                value="대중&#10;교통"
+                onclick="bus()"
+              />
+              <input class="walk" type="button" value="도보" onclick="walk()" />
+              -->
+
+              <div class="real_center" onclick="real_center()">찐중간</div>
+              <div class="car" onclick="car()">
                 자차<br />
                 택시
               </div>
-              <div class="bus">
+              <div class="bus" onclick="bus()">
                 대중<br />
                 교통
               </div>
-              <div class="walk">도보</div>
+              <div class="walk" onclick="walk()">도보</div>
             </div>
           </div>
           <!--원래는 380 * 721임-->
@@ -126,12 +186,12 @@
 
         <div class="location1">
           <div class="current_location">통일로에서</div>
-          <div class="time">20분</div>
+          <div class="time" id="time_location1">20분</div>
         </div>
 
         <div class="location2">
           <div class="current_location">삼송동에서</div>
-          <div class="time">20분</div>
+          <div class="time" id="time_location2">20분</div>
         </div>
 
         <!--<div class="location_center">
