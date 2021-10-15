@@ -7,8 +7,9 @@ body {
     bottom: 85px;
     border: none;
     float: left;
-  }
-  .customoverlay a {
+}
+
+.customoverlay a {
     display: block;
     text-decoration: none;
     color: #fff;
@@ -16,8 +17,9 @@ body {
     font-size: 14px;
     font-weight: bold;
     overflow: hidden;
-  }
-  .customoverlay .place {
+}
+
+.customoverlay .place {
     display: block;
     text-align: center;
     background: #000;
@@ -26,8 +28,9 @@ body {
     font-size: 15px;
     font-weight: bold;
     position: relative;
-  }
-  .customoverlay:after {
+}
+
+.customoverlay:after {
     content: "";
     position: absolute;
     margin-left: -27px;
@@ -37,10 +40,11 @@ body {
     height: 12px;
     /* 말풍선 밑 뾰족부분*/
     background: url("img/vertex_black.png");
-  }
-  /* 여기까지 지도 css */
+}
 
-  
+/* 여기까지 지도 css */
+
+
 /*.img {
     position: relative;
     background-image: url("img/map_screen.png");
@@ -97,8 +101,6 @@ body {
     position: absolute;
     width: 100px;
     height: 40px;
-    top: 302px;
-    left: 31px;
     color: white;
     padding: 8px;
     padding-top: 2px;
@@ -110,8 +112,6 @@ body {
     position: absolute;
     width: 100px;
     height: 40px;
-    top: 352px;
-    left: 250px;
     color: white;
     padding: 8px;
     padding-top: 2px;
