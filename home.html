@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="home.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <img src="img/logo.png" alt="LOGO">
+        <p>만날 사람들의 출발 위치를 입력해주세요.</p>
+    </div>
+    
+
+    <div class="user">
+
+        <div class="list-user">
+            <ul id="list">
+                <li class="item-list-user">
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="img/user.png" alt="사용자 아이콘">
+                            </td>
+                            <td style="float: left; margin-left: 32px;"> 
+                                <!--요거 스타일 빼는 법을 모르겠어요..-->
+                                <p><input type="text" placeholder="탭하여 출발 위치를 입력해주세요"></p>
+                                <hr>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li class="item-list-user">
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="img/user.png" alt="사용자 아이콘">
+                            </td>
+                            <td style="float: left; margin-left: 32px;">
+                                <p><input type="text" placeholder="탭하여 출발 위치를 입력해주세요"></p>
+                                <hr>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li class="item-list-user">
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="img/user.png" alt="사용자 아이콘">
+                            </td>
+                            <td style="float: left; margin-left: 32px;">
+                                <p><input type="text" placeholder="탭하여 출발 위치를 입력해주세요"></p>
+                                <hr>
+                            </td>
+                            <td>
+                                <button type="button" id="del-button"><img src="img/del.png" alt="del_btn"></button>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+        </div>
+       
+        <div class="add-button-user">
+            <button type="button" id="add-button" ><img src="img/add.png" alt="add_btn"></button>
+        </div>
+
+    </div>
+
+    <div class="search">
+        <button type="button">중간 지점 찾기</button> 
+    </div>
+</body>
+<script src="home.js"></script>
+</html>

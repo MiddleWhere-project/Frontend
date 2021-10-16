@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+hr{
+    border: solid 1px black;
+    border-width: 0.5px;
+    width: 234px;
+    margin-left: -19px;
+    border-bottom-width: 0px;
+    margin-top: 6px;
+}
+
+.search button {
+    position: absolute;
+    width: 90%;
+    height: 52px;
+    background-color: #0E71E8;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: #FFFFFF;
+    top: 90%;
+    text-align: center;
+    left: 24px;
+    bottom: 34px;
+}
+
+.header{
+    text-align: center; 
+    margin-top: 87px;
+}
+
+.header p{
+    margin-bottom: 0px; 
+    margin-top: 20px; 
+    font-size: 15px;
+}
+
+.user{
+    margin-top: 78px;
+}
+
+.add-button-user{
+    text-align: center; 
+    margin-top: 9px;
+}
+
+#add-button{
+    border: none; 
+    background-color:white; 
+    
+}
+
+li{
+    list-style: none;
+}
+
+input{
+     font-size: 15px; 
+     margin-bottom: 5px;
+     border: none;
+     width: 100%;
+}
+
+input::placeholder{
+    color: #C2C2C2; 
+}
+
+#list{
+    padding-left: 0px; 
+    display: table; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.item-list-user table{
+    margin-bottom: 9px;
+}
+
+td p{
+    margin-bottom: 0px;
+}
+
+td p input{
+    margin-bottom: 0px;
+}
+
+#del-button{
+    border: none; 
+    background-color:white; 
+    padding-left: 5px; 
+    margin-top: 19px;
+}
