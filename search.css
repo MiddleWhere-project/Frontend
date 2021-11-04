@@ -1,0 +1,116 @@
+.full {
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+}
+.full .btn {
+    background-color: white;
+    border: white;
+}
+
+.full .title {
+    width: 100%;
+    height: 50px;
+    padding-top: 15px;
+    background-color: white;
+    float: left;
+}
+
+.full .title_icon {
+    width: 100px;
+    float: left;
+}
+
+.full .title_contents {
+    padding-top: 10px;
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    width: 300px;
+    margin: auto;
+}
+.full .search {
+    width: 100%;
+    height: 105px;
+    padding: 10x;
+    background-color: white;
+    float: left;
+}
+.full .search .input{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    text-align: left;
+    color: #c4c4c4;
+    font-size: 15px;
+    border: 1px solid #0E71E8;
+}
+.full .search .current {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    height: 40px;
+    text-align: center;
+    background-color: #c4c4c4;
+    color: black;
+    font-size: 15px;
+}
+.full .search .current .locationBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    text-align: center;
+    background-color: #c4c4c4;
+    color: black;
+    font-size: 15px;
+    padding : 0;
+    border : none;
+}
+.full .result {
+    margin-top:30px;
+    width: 100%;
+    background-color: white;
+    float: left;
+}
+.full .result .result_title {
+    height: 30px;
+    text-align: left;
+    font-weight: bold;
+    color: black;
+    font-size: 15px;
+}
+.full .result .result_block {
+    display: flex;
+    padding-top: 25px;
+    height: 50px;
+    width:100%;
+}
+.full .result .result_block .place_icon {
+    width: 5%;
+    text-align:center;
+}
+.full .result .result_block .address {
+    width: 80%;
+    text-align: left;
+    font-size: 15px;
+}
+.full .result .result_block .address .simple {
+    height: 45%;
+    color: black;
+}
+.full .result .result_block .address .blank {
+    height: 10%;
+}
+.full .result .result_block .address .detail {
+    height: 45%;
+    color: #868686;
+}
+.full .result .result_block .result_category {
+    width: 15%;
+    text-align: right;
+    color: #c4c4c4;
+    font-size: 10px;
+}
